@@ -43,22 +43,6 @@ export default function Layout(props) {
           cardType: "summary_large_image"
         }}
       />
-
-      <div
-        className={cx(
-          props?.fontStyle,
-          "antialiased text-gray-800 dark:bg-black dark:text-gray-400"
-        )}>
-        {props.alternate ? (
-          <NavbarAlt {...props} />
-        ) : (
-          <Navbar {...props} />
-        )}
-
-        <div>{children}</div>
-
-        <Footer {...props} />
-      </div>
     </>
   );
 }
